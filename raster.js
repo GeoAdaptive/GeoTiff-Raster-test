@@ -1,8 +1,8 @@
 // var layer = L.leafletGeotiff(url, options).addTo(map);
 
-var parse_georaster = require("georaster");
+// var parse_georaster = require("georaster");
 
-var GeoRasterLayer = require("georaster-layer-for-leaflet");
+// var GeoRasterLayer = require("georaster-layer-for-leaflet");
 
 // initalize leaflet map
 var map = L.map('map').setView([0, 0], 5);
@@ -12,7 +12,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var url_to_geotiff_file = "example_4326.tif";
+// var url_to_geotiff_file = "example_4326.tif";
 
 fetch(url_to_geotiff_file)
   .then(response => response.arrayBuffer())
